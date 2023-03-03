@@ -1,0 +1,29 @@
+ref https://spring.io/guides/gs/accessing-vault/
+
+export export VAULT_TOKEN="00000000-0000-0000-0000-000000000000"
+export VAULT_ADDR="http://127.0.0.1:8200"
+
+
+
+
+core: restoring leases
+rollback: starting rollback manager
+expiration: lease restore complete
+identity: entities restored
+identity: groups restored
+core: post-unseal setup complete
+core: vault is unsealed
+expiration: revoked lease: lease_id=auth/token/root/hf16be4d1fe4cf54c8d1f97e83c74f34b92b9eff44b6c03f3343d29db255327d8
+core: successful mount: namespace= path=secret/ type=kv
+secrets.kv.kv_d31cb658: collecting keys to upgrade
+secrets.kv.kv_d31cb658: done collecting keys: num_keys=1
+secrets.kv.kv_d31cb658: upgrading keys finished
+
+
+
+
+
+ref
+https://spring.io/guides/gs/accessing-vault/
+
+vault server --dev --dev-root-token-id="00000000-0000-0000-0000-000000000000"
